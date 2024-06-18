@@ -1,0 +1,30 @@
+.breadcrumbs {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    @media only screen and (min-width: 768px) {
+        font-size: 1.3rem;
+    }
+
+    .divide-sign {
+        color: #fff;
+        margin: 0 1rem;
+    }
+    &__itm {
+        color: #fff;
+        @media only screen and (min-width: 768px) {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        &_active {
+            color: var(--lightgray);
+            @media only screen and (min-width: 768px) {
+                &:hover {
+                    cursor: default;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@import "./blocks/header";
+@import "./blocks/footer";
+@import "./blocks/content";
+@import "./blocks/navigation";
+@import "./blocks/breadcrumbs";
+@import "./blocks/basket";
+@import "./blocks/basket__itm";
+@import "./blocks/submit-form";
+
+:root {
+    --redbull: #B70000;
+    --almostblack: #0F0F11;
+    --sunny: #FBD13E;
+    --sunnyhover: #DBB325;
+    --lightgray: #9EA2AA;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+html {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background: var(--almostblack);
+    font-size: 10px;
+}
+body {
+    position: relative;
+    height: 100%;
+}

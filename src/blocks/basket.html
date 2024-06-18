@@ -1,0 +1,29 @@
+<div class="basket">
+    <div class="page__title">
+        Корзина
+        <span class="quantity">
+            5 шт
+        </span>
+    </div>
+    
+    @@include('breadcrumbs.html')
+
+
+    <div class="basket-content">
+        <div class="basket-th">
+            <div class="basket-th_image"></div>
+            <div class="basket-th_name">Блюдо:</div>
+            <div class="basket-th-sum">
+                <div class="basket-th_price">Цена:</div>
+                <div class="basket-th_quantity">Кол-во:</div>
+                <div class="basket-th_sum">Сумма:</div>
+            </div>
+        </div>
+        @@include('basket__itm.html')
+        @@include('basket__itm.html')
+        @@include('basket__itm.html')
+        @@include('basket__itm.html')
+
+        @@include('submit-form.html')
+    </div>
+</div>

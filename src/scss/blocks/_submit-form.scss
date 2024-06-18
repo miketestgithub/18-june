@@ -1,0 +1,58 @@
+.form-holder {
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+.form-basket {
+    padding-top: 2rem;
+    &__lbl {
+        display: block;
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: var(--lightgray);
+        text-transform: uppercase;
+        margin-bottom: 1.2rem;
+        @media only screen and (min-width: 768px) {
+            font-size: 1.3rem;
+        }
+    }
+    &-promo {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 2.5rem;
+        &__input {
+            width: 50%;
+            min-width: 17rem;
+            height: 4.2rem;
+            @media only screen and (min-width: 768px) {
+                min-width: 23rem;
+                width: auto;
+            }
+        }
+    }
+    &-sum {
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+        @media only screen and (min-width: 768px) {
+            font-size: 1.3rem;
+        }
+        &__txt {
+            color: var(--lightgray);
+            text-transform: uppercase;
+        }
+        &__val {
+            font-weight: 700;
+            color: #fff;
+            font-size: 1.7rem;
+            margin-left: 0.4rem;
+            @media only screen and (min-width: 768px) {
+                font-size: 2.3rem;
+            }
+        }
+    }
+}
+.button-submit {
+    width: 23rem;
+}

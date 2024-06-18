@@ -1,0 +1,186 @@
+.basket {
+    &-content {
+        &__itm {
+            margin-bottom: 1rem;
+            background-color: #000;
+            padding: 1.5rem 1.2rem;
+            color: #fff;
+            position: relative;
+            @media only screen and (min-width: 768px) {
+                padding: 0;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+.unit-image {
+    display: none;
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    @media only screen and (min-width: 768px) {
+        display: block;
+        width: 12rem;
+        height: 12rem;
+        margin-right: 2.3rem;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        width: 18rem;
+        height: 18rem;
+        margin-right: 3.3rem;
+    }
+    @media only screen and (min-width: 1600px) {
+        margin-right: 7.3rem;
+    }
+}
+.delete-unit {
+    border: 1px solid var(--redbull);
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    
+    &:after {
+        content: '';
+        height: 2rem;
+        border-left: 1px solid var(--redbull);
+        position: absolute;
+        transform: rotate(45deg);
+        left: 1.3rem;
+        top: 0.5rem;
+    }
+    
+    &:before {
+        content: '';
+        height: 2rem;
+        border-left: 1px solid var(--redbull);
+        position: absolute;
+        transform: rotate(-45deg);
+        left: 1.3rem;
+        top: 0.5rem;
+    }
+    @media only screen and (min-width: 1024px) {
+        top: 50%;
+        transform: translateY(-50%);
+        right: 2rem;
+    }
+}
+.unit-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    align-items: flex-start;
+
+    @media only screen and (min-width: 768px) {
+        width: 35%;
+        align-items: center;
+    }
+    &__weight {
+        background-color: #5a5a5a;
+        border-radius: 4px;
+        padding: .3rem .4rem;
+        margin-right: 1rem;
+        font-size: 1.2rem;
+        @media only screen and (min-width: 768px) {
+            font-size: 1.3rem;
+            order: 2;
+        }
+    }
+    &__name {
+        font-size: 1.5rem;
+        display: -webkit-box; 
+        -webkit-box-orient: vertical; 
+        -webkit-line-clamp: 2; 
+        overflow: hidden;
+        flex: 1 0;
+        padding-right: 4rem;
+        @media only screen and (min-width: 768px) {
+            font-size: 1.7rem;
+        }
+        @media only screen and (min-width: 1024px) {
+            font-size: 2rem;
+        }
+    }
+    &__descr {
+        padding-top: .4rem;
+        font-size: 1.2rem;
+        color: var(--lightgray);
+        width: 100%;
+        @media only screen and (min-width: 768px) {
+            margin-bottom: .6rem;
+            font-size: 1.4rem;
+        }
+        @media only screen and (min-width: 1024px) {
+            margin-bottom: .6rem;
+            font-size: 1.5rem;
+        }
+    }
+}
+.sum-info {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 0;
+    &__price, &__quantity, &__total {
+        width: 33.3%;
+        @media only screen and (min-width: 768px) {
+            width: 15%;
+            flex: 1 0;
+        }
+    }
+    &__price-title, &__total-title {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        color: var(--lightgray);
+        @media only screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+    &__price-value, &__total-value {
+        font-size: 1.7rem;
+        font-weight: 800;
+        @media only screen and (min-width: 768px) {
+            font-size: 2.3rem;
+        }
+    }
+}
+.quantity-box {
+    height: 4.2rem;
+    width: 8.2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: 1px solid var(--lightgray);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &__sign {
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        background-color: #000;
+        height: 1.7rem;
+        width: 1.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        padding: .3rem;
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+    &__plus {
+        right: -7px;
+    }
+    &__minus {
+        left: -9px;
+        top: 45%;
+        font-size: 3rem;
+    }
+}

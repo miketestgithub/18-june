@@ -1,0 +1,57 @@
+.page__title {
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    .quantity {
+        font-size: 2.5rem;
+        color: var(--sunny);
+        margin-left: 0.6rem;
+        position: relative;
+        top: -1.2rem;
+        @media only screen and (min-width: 768px) {
+            font-size: 5rem;
+            top: -2.5rem;
+            margin-left: -1rem;
+        }
+    }
+    @media only screen and (min-width: 768px) {
+        font-size: 8rem;
+    }
+}
+
+.basket-th {
+    display: none;
+    color: var(--lightgray);
+    font-size: 1.3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    @media only screen and (min-width: 768px) {
+        display: flex;
+    }
+    &-sum {
+        flex: 1 0;
+        display: inline-flex;
+        & > div {
+            flex: 1 0;
+            width: 15%;
+        }
+    }
+    &_image {
+        display: none;
+        @media only screen and (min-width: 768px) {
+            display: block;
+            width: 12rem;
+            margin-right: 2.3rem;
+        }
+        @media only screen and (min-width: 1024px) {
+            width: 18rem;
+            margin-right: 3.3rem;
+        }
+        @media only screen and (min-width: 1600px) {
+            margin-right: 7.3rem;
+        }
+    }
+    &_name {
+        width: 35%;
+    }
+}
